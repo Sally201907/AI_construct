@@ -178,7 +178,5 @@ data=xr.Dataset(data_vars={"fires_Hist":(('model','time'),fires_Hist),\
     "fires_Hist_tas":(('model','time'),fires_Hist_tas),\
     "fires_Hist_cropland":(('model','time'),fires_Hist_cropland)},
                     coords={'model':model,'time':time})
-
-# 创建新文件
 data.to_netcdf(filename)
 
