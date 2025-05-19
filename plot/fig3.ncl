@@ -400,7 +400,7 @@ alpha_model = new((/8,8/), "float")
   delete(ip)
 
   iarr=new((/16,5/),"float") ; fill with minimum, 25th percentile, median, 
-  dimt = 9
+  dimt = 8
   x25  = round(.25*dimt,3)-1     ; -1 to account for NCL indexing starting
   x75  = round(.75*dimt,3)-1     ; at 0 
   do i = 0,7     
